@@ -46,7 +46,7 @@ public class Person {
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
                 ", number='" + number + '\'' +
-                '}';
+                ',';
     }
 
     public void setNumber(String number) {
