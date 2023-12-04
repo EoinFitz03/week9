@@ -1,10 +1,23 @@
 package ie.atu;
 
 public class Person {
-    public String name;
-    public String address;
-    public String number;
+    private String name;
+    private String address;
+    private String number;
 
+    public Person() {
+
+        this.name = "";
+        this.address = "";
+        this.number = "";
+    }
+
+    public Person(String name, String address, String number) {
+
+        this.name = name;
+        this.address = address;
+        this.number = number;
+    }
 
     public String getName() {
         return name;
@@ -26,8 +39,21 @@ public class Person {
         return number;
     }
 
+    @Override
+    public String toString() {
+        return
+                "Person{" +
+                "name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", number='" + number + '\'' +
+                '}';
+    }
+
     public void setNumber(String number) {
         this.number = number;
+
+
+
 
     }
 }
